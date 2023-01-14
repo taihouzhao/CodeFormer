@@ -8,4 +8,4 @@ RUN pip install --no-cache-dir --upgrade -r requirements.txt
 RUN python basicsr/setup.py develop
 RUN python scripts/download_pretrained_models.py all
 
-ENTRYPOINT python inference_codeformer.py
+ENTRYPOINT ["python", "inference_codeformer.py"]
