@@ -103,6 +103,8 @@ if __name__ == '__main__':
         input_img_list = sorted(glob.glob(os.path.join(args.input_path, '*.[jp][pn]g')))
         result_root = f'results/{os.path.basename(args.input_path)}_{w}'
 
+        print(f'Found {len(input_img_list)} images in {args.input_path}')
+
     if not args.output_path is None: # set output path
         result_root = args.output_path
 
